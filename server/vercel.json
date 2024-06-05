@@ -1,13 +1,11 @@
 {
-  "version":2,
+  "version": 2,
   "builds": [
-    { "src": "*.js", "use": "@vercel/node" }
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "client/package.json", "use": "@vercel/static-build", "config": { "distDir": "client/build" } }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
+    { "src": "/api/(.*)", "dest": "/server.js" },
+    { "src": "/(.*)", "dest": "/client/$1" }
   ]
 }
-    
