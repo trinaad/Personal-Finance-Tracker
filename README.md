@@ -1,8 +1,32 @@
-# Personal-Finance-Tracker
+# Personal Finance Tracker
 
-Personal Finance Tracker: MERN stack web app for seamless financial management. Log, analyze transactions, and visualize data with a responsive interface. User-friendly, secure, and efficient for tracking personal finances.
+A full-stack MERN web app for seamless personal financial management. Log and analyze transactions, visualize spending data, and manage your finances with a clean, responsive interface.
 
-## Deployment
+##  Live Demo
+👉 [personal-finance-tracker-gnno.onrender.com](https://personal-finance-tracker-gnno.onrender.com)
 
-The project is deployed at (https://dark-pink-kingfisher-coat.cyclic.app).
+## Tech Stack
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB Atlas
+- **Authentication:** JWT
 
+## Features
+- User authentication and authorization
+- Add, edit, and delete transactions
+- Data visualization for income vs expenses
+- Responsive design for mobile and desktop
+
+## Run Locally
+```bash
+# Install server dependencies
+cd server
+npm install
+
+# Add .env file in server folder
+MONGO_URL=your_mongodb_url
+JWT_SECRET=your_secret
+
+# Start server
+node server.js
+```
