@@ -1,12 +1,13 @@
-# Expense Management
+# Personal Finance Tracker
 
 A personal expense tracker built with React, Node.js, Express, and MongoDB.
 
 ## Features
 
 - User registration and login
-- Transaction CRUD operations
+- Add, edit, and delete transactions
 - Date range filtering and transaction type filtering
+- Transaction analytics and category summaries
 - MongoDB persistence with Mongoose
 - Frontend proxy to backend API
 
@@ -43,3 +44,4 @@ MONGO_URL=your_mongo_connection_string
 JWT_SECRET=your_secret_key
 CLIENT_URL=http://localhost:3000
 ```
+
