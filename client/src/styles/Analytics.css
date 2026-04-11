@@ -1,0 +1,41 @@
+/* Ensure all 4 cards in 1 row - 25% width each */
+.col-md-4 {
+  width: 25% !important;
+  float: left;
+  padding: 15px;
+}
+
+/* Card header styling */
+.card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Text colors */
+.text-success {
+  color: #22c55e !important;
+}
+
+.text-danger {
+  color: #ef4444 !important;
+}
+
+/* Clearfix for rows */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 1200px) {
+  .col-md-4 {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.content {
+  height: 100vh;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 8px 24px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6) !important;
+}
+
+/* Modal Styles */
+.ant-modal-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.ant-modal-title {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.ant-modal-close {
+  color: white !important;
+}
+
+.ant-modal {
+  border-radius: 12px !important;
+}
+
+/* Select and Input Styles */
+.ant-select-selector {
+  border-radius: 8px !important;
+  border: 2px solid #e0e0e0 !important;
+  padding: 6px 12px !important;
+}
+
+.ant-select-selector:hover {
+  border-color: #667eea !important;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+.ant-input {
+  border-radius: 8px !important;
+  border: 2px solid #e0e0e0 !important;
+  padding: 10px 12px !important;
+  transition: all 0.3s ease !important;
+}
+
+.ant-input:hover {
+  border-color: #667eea !important;
+}
+
+.ant-input:focus {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Table Styles */
+.ant-table {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.ant-table-thead > tr > th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.ant-table-row:hover > td {
+  background: #f5f7ff !important;
+}
+
+/* Message Styles */
+.ant-message-notice-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
+}

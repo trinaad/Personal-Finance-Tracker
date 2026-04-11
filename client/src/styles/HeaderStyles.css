@@ -1,0 +1,91 @@
+.navbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
+  padding: 15px 30px !important;
+}
+
+.navbar-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
+  padding: 15px 30px !important;
+}
+
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.6rem !important;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  font-size: 1.1rem !important;
+  color: white !important;
+  font-weight: 500 !important;
+  margin: 0 15px !important;
+  transition: all 0.3s ease !important;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #e0e7ff !important;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.btn-primary {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid white !important;
+  color: white !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  background: white !important;
+  color: #667eea !important;
+}
+
+.navbar h6 {
+  margin-top: 0px !important;
+  margin-right: 20px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar h6:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

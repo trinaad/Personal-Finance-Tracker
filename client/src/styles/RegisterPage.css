@@ -1,0 +1,221 @@
+/* Define CSS variables for light and dark modes */
+:root {
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --text-color-light: #333;
+}
+
+.register-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow: hidden;
+}
+
+.register-page .row {
+  width: 100%;
+  margin: 0 !important;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-page h1 {
+  color: white !important;
+  text-align: center;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  margin-bottom: 50px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+.register-page .col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 20px;
+}
+
+.register-page .col-md-6 img {
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  max-height: 450px;
+}
+
+.register-form {
+  background-color: white;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  flex: 0 0 35%;
+  max-width: 35%;
+  margin-left: 40px;
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.register-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.register-form h2 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700 !important;
+  color: var(--primary-color);
+  font-size: 26px;
+  margin-bottom: 35px;
+  letter-spacing: 0.3px;
+}
+
+.register-form h1 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700 !important;
+  color: var(--primary-color);
+  font-size: 26px;
+  margin-bottom: 35px;
+  letter-spacing: 0.3px;
+}
+
+.register-form .ant-form-item {
+  margin-bottom: 24px !important;
+}
+
+.register-form .ant-form-item-label label {
+  font-weight: 600 !important;
+  color: #333 !important;
+  font-size: 14px !important;
+}
+
+.register-form a {
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease;
+}
+
+.register-form a:hover {
+  color: var(--secondary-color) !important;
+  text-decoration: underline !important;
+}
+
+.register-form button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  margin-top: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.register-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.register-form button:active {
+  transform: translateY(0);
+}
+
+.register-form .ant-input {
+  border-radius: 8px !important;
+  border: 2px solid #e0e0e0 !important;
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease !important;
+  background: #f8f9fa !important;
+}
+
+.register-form .ant-input::placeholder {
+  color: #999 !important;
+}
+
+.register-form .ant-input:hover {
+  border-color: var(--primary-color) !important;
+  background: white !important;
+}
+
+.register-form .ant-input:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+  background: white !important;
+}
+
+.register-form .d-flex {
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .register-page .col-md-6 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .register-form {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-page .row {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .register-page .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px 0;
+    margin-bottom: 40px;
+  }
+
+  .register-page .col-md-6 img {
+    max-height: 300px;
+  }
+
+  .register-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 40px 30px;
+  }
+
+  .register-page h1 {
+    font-size: 24px;
+  }
+}
