@@ -24,6 +24,10 @@ app.use(
 app.use("/api/v1/users", require("./routes/userRoute"));
 app.use("/api/v1/transections", require("./routes/transectionRoutes"));
 
+// Legacy routes without /api/v1 prefix for production SPA
+app.use("/users", require("./routes/userRoute"));
+app.use("/transections", require("./routes/transectionRoutes"));
+
 // Serve React static files
 app.use(express.static(path.join(__dirname, "client/build")));
 
