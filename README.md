@@ -2,6 +2,12 @@
 
 A personal expense tracker built with React, Node.js, Express, and MongoDB.
 
+## Live Demo
+
+Try the app live on Render:
+
+- https://personal-finance-tracker-gnno.onrender.com
+
 ## Features
 
 - User registration and login
@@ -44,4 +50,3 @@ MONGO_URL=your_mongo_connection_string
 JWT_SECRET=your_secret_key
 CLIENT_URL=http://localhost:3000
 ```
-
